@@ -1,12 +1,12 @@
-// Importing using ES Modules
 import fs from 'fs';
+import path from 'path';
 
-//
-// Using fs
-//
+const testFile = path.join('data', 'test.txt');
+const outputFile = path.join('data', 'output.txt');
+const aboutmeFile = path.join('data', 'aboutme.txt');
 
 // Read
-fs.readFile('test.txt', 'utf8', (err, data) => {
+fs.readFile(testFile, 'utf8', (err, data) => {
     if (err) {
         console.error(err);
         return;
@@ -16,7 +16,7 @@ fs.readFile('test.txt', 'utf8', (err, data) => {
 });
 
 // Write
-fs.writeFile('output.txt', 'Not me writing!', (err) => {
+fs.writeFile(outputFile, 'Not me writing!', (err) => {
     if (err) {
         console.error(err);
         return;
@@ -26,13 +26,13 @@ fs.writeFile('output.txt', 'Not me writing!', (err) => {
 })
 
 // Both
-fs.writeFile('aboutme.txt', 'I am Hamzah \nI enjoy coffee \nLove food and hiking', (err) => {
+fs.writeFile(aboutmeFile, 'I am Hamzah. \nI enjoy coffee. \nLove food and hiking.', (err) => {
     if (err) {
         console.error(err);
         return;
     }
 
-    fs.readFile('aboutme.txt', 'utf8', (err, data) => {
+    fs.readFile(aboutmeFile, 'utf8', (err, data) => {
         if (err) {
             console.error(err);
             return;

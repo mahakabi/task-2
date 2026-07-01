@@ -1,0 +1,21 @@
+{
+  "name": "task-2",
+  "version": "1.0.0",
+  "description": "<!-- Hamzah's Branch -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-work:mahakabi/task-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {}
+}

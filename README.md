@@ -3,4 +3,4 @@
 <!-- Hamzah's Branch -->
 
 <!-- fs-example & path-example files are just to show understanding
-full test is index.js -->
+to test use npm start -->

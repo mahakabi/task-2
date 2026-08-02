@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Postman</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini Postman</h1>
+        <h5>By Hamzah</h5>
+    </header>
+
+    <main>
+        <section>
+            <h2>Endpoint</h2>
+
+            <input type="text" id="endpoint" name="endpoint">
+        </section>
+
+        <section>
+            <h2>Request Body</h2>
+
+            <label for="request-body">JSON Body</label>
+            <textarea id="request-body" name="request-body"></textarea>
+        </section>
+
+        <section class="button-group">
+            <button id="get-btn">GET</button>
+            <button id="post-btn">POST</button>
+            <button id="put-btn">PUT</button>
+            <button id="delete-btn">DELETE</button>
+        </section>
+
+        <section>
+            <h2>Response</h2>
+
+            <p id="status">Status:</p>
+
+            <pre id="response"></pre>
+        </section>
+    </main>
+    <script src="/app.js"></script>
+</body>
+</html>

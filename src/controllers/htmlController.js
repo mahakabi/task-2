@@ -6,7 +6,7 @@ const htmlFile = path.join('public', 'index.html');
 function htmlController(req, res) {
     fs.readFile(htmlFile, 'utf8', (err, data) => {
         if (err) {
-            res.statusCode = 500;
+            res.statusCode = 501;
             res.setHeader('Content-Type', 'application/json');
 
             res.end(
